@@ -13,6 +13,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,17 +25,26 @@ class Ui_Widget
 public:
     QHBoxLayout *horizontalLayout;
     QFrame *frame_back;
+    QHBoxLayout *horizontalLayout_2;
+    QFrame *frame;
+    QHBoxLayout *horizontalLayout_3;
+    QWidget *widget_tools;
+    QPushButton *pushButton_chagetools;
+    QFrame *frame_2;
+    QVBoxLayout *verticalLayout;
+    QFrame *frame_loacal;
+    QFrame *frame_fuction;
+    QHBoxLayout *horizontalLayout_4;
+    QStackedWidget *stackedWidget;
+    QWidget *page;
+    QWidget *page_2;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(831, 536);
-        Widget->setStyleSheet(QString::fromUtf8("\n"
-"color:#ffffff;\n"
-"border-radius:4px;\n"
-"\n"
-""));
+        Widget->resize(793, 471);
+        Widget->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout = new QHBoxLayout(Widget);
         horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName("horizontalLayout");
@@ -43,7 +55,7 @@ public:
 "	border-image: url(:/008 Rainy Ashville.png);\n"
 "	 background-color: #4CAF50; /* \350\203\214\346\231\257\351\242\234\350\211\262 */\n"
 "    color: white;              /* \346\226\207\345\255\227\351\242\234\350\211\262 */\n"
-"    border-radius: 20px;       /* \345\234\206\350\247\222\345\215\212\345\276\204\357\274\214\346\211\200\346\234\211\345\233\233\344\270\252\350\247\222\351\203\275\345\272\224\347\224\250\350\277\231\344\270\252\345\200\274 */\n"
+"    border-radius: 0px;       /* \345\234\206\350\247\222\345\215\212\345\276\204\357\274\214\346\211\200\346\234\211\345\233\233\344\270\252\350\247\222\351\203\275\345\272\224\347\224\250\350\277\231\344\270\252\345\200\274 */\n"
 "    padding: 5px;              /* \345\206\205\350\276\271\350\267\235 */\n"
 "}\n"
 "\n"
@@ -52,6 +64,120 @@ public:
 ""));
         frame_back->setFrameShape(QFrame::StyledPanel);
         frame_back->setFrameShadow(QFrame::Raised);
+        horizontalLayout_2 = new QHBoxLayout(frame_back);
+        horizontalLayout_2->setSpacing(0);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        frame = new QFrame(frame_back);
+        frame->setObjectName("frame");
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(1);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
+        frame->setSizePolicy(sizePolicy);
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_3 = new QHBoxLayout(frame);
+        horizontalLayout_3->setSpacing(0);
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        widget_tools = new QWidget(frame);
+        widget_tools->setObjectName("widget_tools");
+        widget_tools->setStyleSheet(QString::fromUtf8("#widget_tools{\n"
+"	\n"
+"    background-color: transparent;\n"
+"    border: 1px solid gray;\n"
+"    border-radius: 4px;\n"
+"}"));
+
+        horizontalLayout_3->addWidget(widget_tools);
+
+
+        horizontalLayout_2->addWidget(frame);
+
+        pushButton_chagetools = new QPushButton(frame_back);
+        pushButton_chagetools->setObjectName("pushButton_chagetools");
+        pushButton_chagetools->setMaximumSize(QSize(20, 45));
+        pushButton_chagetools->setStyleSheet(QString::fromUtf8("#pushButton_chagetools {\n"
+"    background-color: transparent;\n"
+"    border: 1px solid gray;\n"
+"    border-radius: 4px;\n"
+"    padding: 5px 10px;\n"
+"    /* \344\270\215\350\246\201\344\275\277\347\224\250 border-image \346\235\245\350\256\276\347\275\256\345\233\276\346\240\207 */\n"
+"}\n"
+"\n"
+"/* \346\202\250\345\217\257\344\273\245\346\267\273\345\212\240\345\205\266\344\273\226\347\212\266\346\200\201\346\240\267\345\274\217\357\274\214\345\246\202 :hover \345\222\214 :pressed */\n"
+"#pushButton_chagetools:hover {\n"
+"    border-color: darkgray;\n"
+"}\n"
+"\n"
+"#pushButton_chagetools:pressed {\n"
+"    border-color: black;\n"
+"}"));
+
+        horizontalLayout_2->addWidget(pushButton_chagetools);
+
+        frame_2 = new QFrame(frame_back);
+        frame_2->setObjectName("frame_2");
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(8);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(frame_2->sizePolicy().hasHeightForWidth());
+        frame_2->setSizePolicy(sizePolicy1);
+        frame_2->setFrameShape(QFrame::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Raised);
+        verticalLayout = new QVBoxLayout(frame_2);
+        verticalLayout->setSpacing(0);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        frame_loacal = new QFrame(frame_2);
+        frame_loacal->setObjectName("frame_loacal");
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(1);
+        sizePolicy2.setHeightForWidth(frame_loacal->sizePolicy().hasHeightForWidth());
+        frame_loacal->setSizePolicy(sizePolicy2);
+        frame_loacal->setStyleSheet(QString::fromUtf8("    background-color: transparent;\n"
+"    border: 1px solid gray;\n"
+"    border-radius: 4px;"));
+        frame_loacal->setFrameShape(QFrame::StyledPanel);
+        frame_loacal->setFrameShadow(QFrame::Raised);
+
+        verticalLayout->addWidget(frame_loacal);
+
+        frame_fuction = new QFrame(frame_2);
+        frame_fuction->setObjectName("frame_fuction");
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(10);
+        sizePolicy3.setHeightForWidth(frame_fuction->sizePolicy().hasHeightForWidth());
+        frame_fuction->setSizePolicy(sizePolicy3);
+        frame_fuction->setFrameShape(QFrame::StyledPanel);
+        frame_fuction->setFrameShadow(QFrame::Raised);
+        horizontalLayout_4 = new QHBoxLayout(frame_fuction);
+        horizontalLayout_4->setSpacing(0);
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        stackedWidget = new QStackedWidget(frame_fuction);
+        stackedWidget->setObjectName("stackedWidget");
+        stackedWidget->setStyleSheet(QString::fromUtf8("    background-color: transparent;\n"
+"    border: 1px solid gray;\n"
+"    border-radius: 4px;"));
+        page = new QWidget();
+        page->setObjectName("page");
+        stackedWidget->addWidget(page);
+        page_2 = new QWidget();
+        page_2->setObjectName("page_2");
+        stackedWidget->addWidget(page_2);
+
+        horizontalLayout_4->addWidget(stackedWidget);
+
+
+        verticalLayout->addWidget(frame_fuction);
+
+
+        horizontalLayout_2->addWidget(frame_2);
+
 
         horizontalLayout->addWidget(frame_back);
 
@@ -64,6 +190,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        pushButton_chagetools->setText(QString());
     } // retranslateUi
 
 };

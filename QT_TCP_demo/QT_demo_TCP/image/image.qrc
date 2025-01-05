@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>008 Rainy Ashville.png</file>
+        <file>dayu.png</file>
+        <file>xiaoyu.png</file>
     </qresource>
 </RCC>
