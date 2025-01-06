@@ -23,6 +23,9 @@ protected:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
+private slots:
+    void on_pushButton_chagetools_clicked();
+
 private:
     bool isDragging;
     QPoint dragStartPosition;
