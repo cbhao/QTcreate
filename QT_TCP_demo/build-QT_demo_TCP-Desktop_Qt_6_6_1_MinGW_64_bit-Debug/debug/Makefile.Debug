@@ -662,6 +662,7 @@ debug/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QMouseEvent \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qregularexpression.h \
 		ui_widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/QVariant \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
@@ -705,7 +706,6 @@ debug/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qstyleoption.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qvalidator.h \
-		D:/QT/6.6.1/mingw_64/include/QtCore/qregularexpression.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qslider.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qtabbar.h \

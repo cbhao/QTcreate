@@ -28,7 +28,9 @@ private slots:
 
 private:
     bool isDragging;
+    bool isOriginalState = false;
     QPoint dragStartPosition;
+    // bool isExpanded = false; // 初始状态为收缩
 
 private:
     Ui::Widget *ui;
