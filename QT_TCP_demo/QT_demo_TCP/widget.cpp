@@ -3,6 +3,7 @@
 #include <QStyle>
 #include <QStyleOption>
 #include <QPropertyAnimation> // 包含动画框架的头文件
+#include <QTimer>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -88,11 +89,33 @@ void Widget::on_pushButton_chagetools_clicked()
     isExpanded = !isExpanded;
 }
 
+void Widget::updateTime()
+{
+    // 获取当前时间
+    QTime currentTime = QTime::currentTime();
+
+    // 更新标签上的时间
+    // timeLabel->setText("Current time: " + currentTime.toString("hh:mm:ss"));
+
+    // 打印当前时间到控制台（可选）
+    qDebug() << "Current time:" << currentTime.toString("hh:mm:ss");
+}
+
 void Widget::frame_tools()
 {
+    //创建一个定时器
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &Widget::updateTime);
+    //获取当前时间
+    curren_time =  QTime::currentTime();
+    qDebug() << "Current time:" << curren_time.toString("hh:mm:ss");
     //设计widget下的button的UI设计，设计图标，以及布局
 
+    // 启动定时器，每隔1000毫秒（1秒）触发一次
+    timer->start(1000);
 
+    // 初始更新时间
+    updateTime();
 
 }
 // void Widget::on_pushButton_chagetools_clicked()

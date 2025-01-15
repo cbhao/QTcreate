@@ -283,6 +283,10 @@ release/moc_widget.cpp: ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QMouseEvent \
+		D:/QT/6.6.1/mingw_64/include/QtCore/QTime \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
 		release/moc_predefs.h \
 		D:/QT/6.6.1/mingw_64/bin/moc.exe
 	D:\QT\6.6.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/24237/Desktop/demo/QT/qt_create/QT_TCP_demo/build-QT_demo_TCP-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/debug/release/moc_predefs.h -ID:/QT/6.6.1/mingw_64/mkspecs/win32-g++ -IC:/Users/24237/Desktop/demo/QT/qt_create/QT_TCP_demo/QT_demo_TCP -ID:/QT/6.6.1/mingw_64/include -ID:/QT/6.6.1/mingw_64/include/QtWidgets -ID:/QT/6.6.1/mingw_64/include/QtGui -ID:/QT/6.6.1/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\QT_demo_TCP\widget.h -o release\moc_widget.cpp
@@ -474,6 +478,10 @@ release/main.o: ../../QT_demo_TCP/main.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QMouseEvent \
+		D:/QT/6.6.1/mingw_64/include/QtCore/QTime \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qapplication.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -494,7 +502,6 @@ release/main.o: ../../QT_demo_TCP/main.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qpromise.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qguiapplication.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qinputmethod.h \
-		D:/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\QT_demo_TCP\main.cpp
 
@@ -662,6 +669,10 @@ release/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qnativeinterface.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/QMouseEvent \
+		D:/QT/6.6.1/mingw_64/include/QtCore/QTime \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
 		ui_widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/QVariant \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/QApplication \
@@ -684,7 +695,6 @@ release/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qpromise.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qguiapplication.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qinputmethod.h \
-		D:/QT/6.6.1/mingw_64/include/QtCore/qlocale.h \
 		D:/QT/6.6.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/QFrame \
 		D:/QT/6.6.1/mingw_64/include/QtWidgets/qframe.h \
@@ -716,7 +726,10 @@ release/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qpropertyanimation.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qvariantanimation.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qabstractanimation.h \
-		D:/QT/6.6.1/mingw_64/include/QtCore/qeasingcurve.h
+		D:/QT/6.6.1/mingw_64/include/QtCore/qeasingcurve.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qtimer.h \
+		D:/QT/6.6.1/mingw_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\widget.o ..\..\QT_demo_TCP\widget.cpp
 
 release/qrc_image.o: release/qrc_image.cpp 

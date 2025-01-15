@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMouseEvent>
+#include <QTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,15 +26,19 @@ protected:
 
 private slots:
     void on_pushButton_chagetools_clicked();
+    void updateTime();
 
 private:
+    Ui::Widget *ui;
+
     bool isDragging;
-    bool isOriginalState = false;
     QPoint dragStartPosition;
     void frame_tools(void);
     // bool isExpanded = false; // 初始状态为收缩
 
-private:
-    Ui::Widget *ui;
+public:
+    QTime curren_time;
+
+
 };
 #endif // WIDGET_H
