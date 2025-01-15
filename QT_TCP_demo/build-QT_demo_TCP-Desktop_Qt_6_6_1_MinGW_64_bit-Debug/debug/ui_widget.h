@@ -29,6 +29,7 @@ public:
     QFrame *frame;
     QHBoxLayout *horizontalLayout_3;
     QWidget *widget_tools;
+    QVBoxLayout *verticalLayout_2;
     QPushButton *pushButton_chagetools;
     QFrame *frame_2;
     QVBoxLayout *verticalLayout;
@@ -43,7 +44,7 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(793, 471);
+        Widget->resize(801, 443);
         Widget->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout = new QHBoxLayout(Widget);
         horizontalLayout->setSpacing(0);
@@ -75,6 +76,8 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
         frame->setSizePolicy(sizePolicy);
+        frame->setMinimumSize(QSize(0, 0));
+        frame->setMaximumSize(QSize(84, 16777215));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         horizontalLayout_3 = new QHBoxLayout(frame);
@@ -89,6 +92,8 @@ public:
 "    border: 1px solid gray;\n"
 "    border-radius: 4px;\n"
 "}"));
+        verticalLayout_2 = new QVBoxLayout(widget_tools);
+        verticalLayout_2->setObjectName("verticalLayout_2");
 
         horizontalLayout_3->addWidget(widget_tools);
 

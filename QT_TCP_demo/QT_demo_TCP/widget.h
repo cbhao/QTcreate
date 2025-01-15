@@ -30,6 +30,7 @@ private:
     bool isDragging;
     bool isOriginalState = false;
     QPoint dragStartPosition;
+    void frame_tools(void);
     // bool isExpanded = false; // 初始状态为收缩
 
 private:

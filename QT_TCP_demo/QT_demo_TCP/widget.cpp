@@ -1,5 +1,4 @@
 #include "widget.h"
-#include "qregularexpression.h"
 #include "ui_widget.h"
 #include <QStyle>
 #include <QStyleOption>
@@ -12,18 +11,17 @@ Widget::Widget(QWidget *parent)
 {
     // 设置无边框样式
     setWindowFlags(Qt::FramelessWindowHint);
-
-    setStyleSheet("background-color: #4CAF50;"); // 设置背景颜色
+    frame_tools();
     ui->setupUi(this);
-   // connect(ui->pushButton_chagetools,&QPushButton::clicked,this,&Widget::on_pushButton_chagetools_clicked);
+    // 初始化半圆的大小和位置（这些可以在构造函数中设置，或者通过其他方法设置）
+    QRect semiCircleRect = QRect(width() / 4, height() / 4, width() / 2, height() / 2);
+
 }
 
 Widget::~Widget()
 {
     delete ui;
 }
-
-
 
 
 const int MINIMUM_LEFT_FRAME_WIDTH = 0; // 定义一个常量，规定动画的移动距离
@@ -36,6 +34,15 @@ void Widget::on_pushButton_chagetools_clicked()
     int leftFrameWidth = ui->frame->width();
     int rightFrameWidth = ui->frame_2->width();
     int pushButtonMiddleWidth = ui->pushButton_chagetools->width();
+
+    //实现在收缩时，frame-widget也同时收缩(这里单独列出一个函数)
+
+
+
+   //frame下的也同时扩大
+
+
+
     QRect pushButtonMiddleRect = ui->pushButton_chagetools->geometry();
     QRect rightFrameRect = ui->frame_2->geometry();
 
@@ -74,18 +81,19 @@ void Widget::on_pushButton_chagetools_clicked()
     buttonAnimation->setStartValue(pushButtonMiddleRect);
     buttonAnimation->setEndValue(pushButtonEndRect);
 
-    // // 同时启动动画
-    // QParallelAnimationGroup *animationGroup = new QParallelAnimationGroup;
-    // animationGroup->addAnimation(leftFrameAnimation);
-    // animationGroup->addAnimation(rightFrameAnimation);
-    // animationGroup->addAnimation(buttonAnimation);
-    // animationGroup->start(QAbstractAnimation::DeleteWhenStopped);
-
     leftFrameAnimation->start(QAbstractAnimation::DeleteWhenStopped);
     rightFrameAnimation->start(QAbstractAnimation::DeleteWhenStopped);
     buttonAnimation->start(QAbstractAnimation::DeleteWhenStopped);
     // 更新状态
     isExpanded = !isExpanded;
+}
+
+void Widget::frame_tools()
+{
+    //设计widget下的button的UI设计，设计图标，以及布局
+
+
+
 }
 // void Widget::on_pushButton_chagetools_clicked()
 // {
@@ -179,19 +187,6 @@ void Widget::on_pushButton_chagetools_clicked()
 //     leftFrameAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 //     isExpanded = !isExpanded;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // void Widget::on_pushButton_chagetools_clicked()

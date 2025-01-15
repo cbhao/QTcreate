@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>793</width>
-    <height>471</height>
+    <width>801</width>
+    <height>443</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -77,6 +77,18 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>84</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
         </property>
@@ -109,6 +121,7 @@
     border-radius: 4px;
 }</string>
            </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2"/>
           </widget>
          </item>
         </layout>
