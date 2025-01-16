@@ -29,7 +29,8 @@ public:
     QFrame *frame;
     QHBoxLayout *horizontalLayout_3;
     QWidget *widget_tools;
-    QVBoxLayout *verticalLayout_2;
+    QPushButton *pushButton_close;
+    QPushButton *pushButton;
     QPushButton *pushButton_chagetools;
     QFrame *frame_2;
     QVBoxLayout *verticalLayout;
@@ -44,7 +45,7 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(801, 443);
+        Widget->resize(1031, 540);
         Widget->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout = new QHBoxLayout(Widget);
         horizontalLayout->setSpacing(0);
@@ -77,7 +78,7 @@ public:
         sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
         frame->setSizePolicy(sizePolicy);
         frame->setMinimumSize(QSize(0, 0));
-        frame->setMaximumSize(QSize(84, 16777215));
+        frame->setMaximumSize(QSize(86, 16777215));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         horizontalLayout_3 = new QHBoxLayout(frame);
@@ -92,8 +93,25 @@ public:
 "    border: 1px solid gray;\n"
 "    border-radius: 4px;\n"
 "}"));
-        verticalLayout_2 = new QVBoxLayout(widget_tools);
-        verticalLayout_2->setObjectName("verticalLayout_2");
+        pushButton_close = new QPushButton(widget_tools);
+        pushButton_close->setObjectName("pushButton_close");
+        pushButton_close->setGeometry(QRect(20, 470, 44, 44));
+        pushButton_close->setStyleSheet(QString::fromUtf8("#pushButton_close {\n"
+"    border: 2px solid #ffd3d3; /* \346\265\205\347\201\260\350\211\262\350\276\271\346\241\206 */\n"
+"    border-radius: 22px;       /* \345\234\206\350\247\222\345\215\212\345\276\204 */\n"
+"    width: 40px;               /* \345\233\272\345\256\232\345\256\275\345\272\246 */\n"
+"    height: 40px;             /* \345\233\272\345\256\232\351\253\230\345\272\246 */\n"
+"    background: transparent;   /* \351\200\217\346\230\216\350\203\214\346\231\257 */\n"
+"    color: white;             /* \346\226\207\346\234\254\351\242\234\350\211\262 */\n"
+"    font-size: 16px;         /* \345\255\227\344\275\223\345\244\247\345\260\217 */\n"
+"}\n"
+"\n"
+""));
+        pushButton = new QPushButton(widget_tools);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(60, 480, 15, 15));
+        pushButton->setMinimumSize(QSize(15, 15));
+        pushButton->setMaximumSize(QSize(15, 15));
 
         horizontalLayout_3->addWidget(widget_tools);
 
@@ -195,6 +213,8 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        pushButton_close->setText(QString());
+        pushButton->setText(QString());
         pushButton_chagetools->setText(QString());
     } // retranslateUi
 

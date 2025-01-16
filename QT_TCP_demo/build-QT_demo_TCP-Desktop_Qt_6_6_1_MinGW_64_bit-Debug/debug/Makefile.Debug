@@ -105,8 +105,10 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_image.cpp
 debug/qrc_image.cpp: ../../QT_demo_TCP/image/image.qrc \
 		D:/QT/6.6.1/mingw_64/bin/rcc.exe \
+		../../QT_demo_TCP/image/moon.png \
 		../../QT_demo_TCP/image/dayu.png \
 		../../QT_demo_TCP/image/008\ Rainy\ Ashville.png \
+		../../QT_demo_TCP/image/sun.png \
 		../../QT_demo_TCP/image/xiaoyu.png
 	D:\QT\6.6.1\mingw_64\bin\rcc.exe -name image --no-zstd ..\..\QT_demo_TCP\image\image.qrc -o debug\qrc_image.cpp
 
@@ -729,7 +731,12 @@ debug/widget.o: ../../QT_demo_TCP/widget.cpp ../../QT_demo_TCP/widget.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qeasingcurve.h \
 		D:/QT/6.6.1/mingw_64/include/QtCore/QTimer \
 		D:/QT/6.6.1/mingw_64/include/QtCore/qtimer.h \
-		D:/QT/6.6.1/mingw_64/include/QtCore/qbasictimer.h
+		D:/QT/6.6.1/mingw_64/include/QtCore/qbasictimer.h \
+		D:/QT/6.6.1/mingw_64/include/QtGui/QPainter \
+		D:/QT/6.6.1/mingw_64/include/QtGui/qpainter.h \
+		D:/QT/6.6.1/mingw_64/include/QtGui/qtextoption.h \
+		D:/QT/6.6.1/mingw_64/include/QtGui/qpen.h \
+		D:/QT/6.6.1/mingw_64/include/QtGui/QPen
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\widget.o ..\..\QT_demo_TCP\widget.cpp
 
 debug/qrc_image.o: debug/qrc_image.cpp 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>801</width>
-    <height>443</height>
+    <width>1031</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -85,7 +85,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>84</width>
+          <width>86</width>
           <height>16777215</height>
          </size>
         </property>
@@ -121,7 +121,89 @@
     border-radius: 4px;
 }</string>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_2"/>
+           <widget class="QPushButton" name="pushButton_close">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>460</y>
+              <width>61</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_close {
+    border: 2px solid #00d3d3; /* 浅灰色边框 */
+    border-radius:28px;       /* 圆角半径 */
+    width: 40px;               /* 固定宽度 */
+    height: 40px;             /* 固定高度 */
+    background: transparent;   /* 透明背景 */
+    color: white;             /* 文本颜色 */
+    font-size: 16px;         /* 字体大小 */
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_sun">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>480</y>
+              <width>21</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/moon.png);
+/*border-image: url(:/sun.png);*/</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>477</y>
+              <width>31</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/sun.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
           </widget>
          </item>
         </layout>
